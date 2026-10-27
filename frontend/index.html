@@ -1,0 +1,16 @@
+<!doctype html><html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1224"><meta name="description" content="توقعات الطقس والحرارة لمدينتك">
+<title>Cloud Weather Pro | الطقس حولك</title><link rel="stylesheet" href="/styles.css"><script defer src="/app.js"></script>
+</head><body>
+<header class="topbar"><a class="brand" href="/"><span class="logo">☁</span><span><b>Cloud Weather</b><small>PRO WEATHER EXPERIENCE</small></span></a><span class="live"><i></i> بيانات مباشرة</span></header>
+<main class="page"><section class="hero"><div class="eyebrow">✦ توقعات الطقس بطريقة أوضح</div><h1>اعرف طقس <em>عالمك</em></h1><p>حالة الجو والتوقعات اليومية، في واجهة واحدة بسيطة وأنيقة.</p>
+<form id="search-form"><span>⌕</span><label class="sr-only" for="city">اسم المدينة</label><input id="city" maxlength="100" placeholder="ابحث عن مدينة... مثل Cairo" required><button id="search-button">اعرض الطقس ←</button></form>
+<div class="quick">جرّب: <button data-city="Cairo">القاهرة</button><button data-city="Alexandria">الإسكندرية</button><button data-city="Riyadh">الرياض</button><button data-city="Dubai">دبي</button></div></section>
+<div id="message" role="status">اكتب اسم مدينة لعرض الطقس الحالي والتوقعات.</div>
+<section id="weather-panel" class="weather-grid hidden"><article class="card main-weather"><div class="place"><div><small>الطقس الآن في</small><h2 id="place-name">—</h2><p id="place-subtitle"></p></div><span id="weather-icon" class="weather-icon">☀️</span></div>
+<div class="temp-row"><strong id="temperature">—°</strong><div><b id="condition">—</b><small id="feels-like">المحسوس —°</small></div></div><hr>
+<div class="stats"><div><span>💧 الرطوبة</span><b id="humidity">—%</b></div><div><span>🌬️ الرياح</span><b id="wind">— كم/س</b></div><div><span>🌧️ الهطول</span><b id="precipitation">— مم</b></div></div><small id="updated-at" class="updated"></small></article>
+<article class="card forecast"><div class="heading"><div><small>نظرة قريبة</small><h3>توقعات 3 أيام</h3></div><span class="tag">3 DAYS</span></div><div id="forecast-list"></div></article></section>
+<section class="card history"><div class="heading"><div><small>آخر عمليات البحث</small><h3>سجل المدن</h3></div><button id="refresh-history" class="refresh">تحديث ↻</button></div><div id="history-list"><small>يتم تحميل السجل...</small></div></section>
+<footer>☁ Cloud Weather Pro <span>·</span> بيانات الطقس من Open-Meteo</footer></main></body></html>
